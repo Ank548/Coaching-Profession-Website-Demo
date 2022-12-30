@@ -1,0 +1,66 @@
+/* Css Reset */
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+/* Variables */
+:root{
+    --primary-color:blue;
+}
+
+/* Design */
+.bod{
+    border: 2px solid rgba(0, 0, 0,);
+}
+
+/* Grid Template */
+#main{
+    display: grid;
+    grid-template-areas: 
+    "head head head navbar navbar navbar navbar navbar"
+    "content content content content content content content content" 
+    "about about about about about aside aside aside"
+    "service service service service service service service service" 
+    "contact contact contact contact form form form form"
+    ;
+    padding: 12px;
+    grid-gap: 2rem;
+}
+
+.head{
+    grid-area:head;
+}
+
+.navbar{
+    grid-area:navbar;
+}
+
+.content{
+    grid-area:content;
+    
+}
+
+.about{
+    grid-area:about;
+    
+}
+
+.aside{
+    grid-area:aside;
+    
+}
+
+.service{
+    grid-area:service;
+    
+}
+
+.contact{
+    grid-area:contact;
+
+}
+
+.form{
+    grid-area: form;
+}
