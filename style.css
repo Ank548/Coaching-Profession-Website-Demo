@@ -1,5 +1,5 @@
 /* Css Reset */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Teko&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');
 
 body {
     margin: 0px 0px;
@@ -27,33 +27,33 @@ body {
         "contact contact contact contact form form form form"
     ;
     /* padding: 12px; */
-    grid-gap: 2rem;
+    /* grid-gap: 2rem; */
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
 }
 
-#main::before{
+/* #main::before{
     content: "";
     background: url(/bg.webp)no-repeat center center/cover;
     position:absolute;
     top: 0px;
     left: 0px;
     z-index: -2;
-    height: 100%;
-    width: 100%;
-}
+    height: 100vh;
+    width: 100vw;
+} */
 
-.head{
-    background-color: rgb(221 225 229 / 21%);
+.head {
+    /* background-color: rgb(221 225 229 / 21%); */
     position: sticky;
     top: 0px;
     left: 0px;
 }
 
-.head::before{
+.head::before {
     content: "";
     background-color: white;
     /* background-color: rgb(221 225 229 / 21%); */
-    position:absolute;
+    position: absolute;
     top: 0px;
     left: 0px;
     z-index: -1;
@@ -69,36 +69,43 @@ body {
     flex-direction: column;
     /* font-size: 0.8rem; */
     width: 500px;
-    background-color: rgb(221 225 229 / 21%);
+    /* background-color: rgb(221 225 229 / 21%); */
 }
 
-.head1 h1{
+.head1 h1 {
     font-size: 1.55rem;
     margin-bottom: 0px;
-    font-family:'Ubuntu Condensed';
+    font-family: Arial, 'Ubuntu Condensed';
     line-height: 12px;
 }
 
-.head1 p{
-    /* margin-top: 0px; */
-}
+/* .head1 p {
+    margin-top: 0px;
+} */
 
 .navbar {
     grid-area: navbar;
     display: flex;
+    height: 90px;
 }
 
-.navbar1{
+.size {
+    display: flex;
+    background-color: rgb(221 225 229 / 21%);
+    width: 100%;
+}
+
+.navbar1 {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    background-color: rgb(221 225 229 / 21%);
-    width: 68%;
+    /* background-color: rgb(221 225 229 / 21%); */
+    /* width: auto; */
 }
 
 .navbar1 ul {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 0px;
 }
@@ -113,18 +120,54 @@ body {
     color: black;
 }
 
+.content::before {
+    content: "";
+    background: url(/bg4.jpg_)no-repeat center center/cover;
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    z-index: -1;
+    height: 650px;
+    width: 100%;
+    /* opacity: 0.7; */
+}
+
 .content {
     grid-area: content;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 650px;
 
+}
+
+.content h1:nth-child(1) {
+    margin-top: 90px;
+}
+
+.content h1:nth-child(2) {
+    font-size: 9rem;
+    font-weight: bolder;
+    margin: 0px;
 }
 
 .about {
     grid-area: about;
+    padding: 30px 110px;
 
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .aside {
     grid-area: aside;
+    /* background-image: url(/bg2.webp); */
 
 }
 
