@@ -1,66 +1,143 @@
 /* Css Reset */
-body{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');
+
+body {
     margin: 0px 0px;
     padding: 0px 0px;
 }
 
 /* Variables */
-:root{
-    --primary-color:blue;
+:root {
+    --primary-color: blue;
 }
 
 /* Design */
-.bod{
-    border: 2px solid rgba(0, 0, 0,);
-}
+/* .bod {
+    border: 2px solid rgb(216, 25, 25);
+} */
 
 /* Grid Template */
-#main{
+#main {
     display: grid;
-    grid-template-areas: 
-    "head head head navbar navbar navbar navbar navbar"
-    "content content content content content content content content" 
-    "about about about about about aside aside aside"
-    "service service service service service service service service" 
-    "contact contact contact contact form form form form"
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar navbar navbar navbar"
+        "content content content content content content content content"
+        "about about about about about aside aside aside"
+        "service service service service service service service service"
+        "contact contact contact contact form form form form"
     ;
-    padding: 12px;
+    /* padding: 12px; */
     grid-gap: 2rem;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+#main::before{
+    content: "";
+    background: url(/bg.webp)no-repeat center center/cover;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
 }
 
 .head{
-    grid-area:head;
+    background-color: rgb(221 225 229 / 21%);
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
 
-.navbar{
-    grid-area:navbar;
+.head::before{
+    content: "";
+    background-color: white;
+    /* background-color: rgb(221 225 229 / 21%); */
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
 }
 
-.content{
-    grid-area:content;
-    
+.head1 {
+    /* grid-area:head; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-size: 0.8rem; */
+    width: 500px;
+    background-color: rgb(221 225 229 / 21%);
 }
 
-.about{
-    grid-area:about;
-    
+.head1 h1{
+    font-size: 1.55rem;
+    margin-bottom: 0px;
+    font-family:'Ubuntu Condensed';
+    line-height: 12px;
 }
 
-.aside{
-    grid-area:aside;
-    
+.head1 p{
+    /* margin-top: 0px; */
 }
 
-.service{
-    grid-area:service;
-    
+.navbar {
+    grid-area: navbar;
+    display: flex;
 }
 
-.contact{
-    grid-area:contact;
+.navbar1{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgb(221 225 229 / 21%);
+    width: 68%;
+}
+
+.navbar1 ul {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0px;
+}
+
+.navbar1 ul li {
+    list-style: none;
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    padding: 12px;
+    color: black;
+}
+
+.content {
+    grid-area: content;
 
 }
 
-.form{
+.about {
+    grid-area: about;
+
+}
+
+.aside {
+    grid-area: aside;
+
+}
+
+.service {
+    grid-area: service;
+
+}
+
+.contact {
+    grid-area: contact;
+
+}
+
+.form {
     grid-area: form;
 }
