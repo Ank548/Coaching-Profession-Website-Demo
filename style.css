@@ -157,21 +157,26 @@ body {
 .line{
     border-bottom: 2px solid;
     width: 60px;
-    margin-top: 30px;
+    margin-top: 60px;
+}
+.line2{
+    border-bottom: 2px solid;
+    width: 60px;
+    margin-top: 90px;
 }
 
-.about {
+#about {
     grid-area: about;
     padding: 30px 30px 30px 112px;
 }
 
-.about h1 {
+#about h1 {
     font-size: 3rem;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.about p{
+#about p{
     font-family:'Ubuntu' ;
 }
 
@@ -203,24 +208,24 @@ body {
     }
 }
 
-.service::before{
+#service::before{
     content: "";
     background: url(/bg.webp)no-repeat center center/cover;
     position: absolute;
     z-index: -4;
     width: 100%;
-    height: 700px;
+    height: 770px;
     left: 0px;
 }
 
-.service {
+#service {
     grid-area: service;
     padding: 0px 30px 0px 112px;
-    height: 700px;
+    height: 770px;
 
 }
 
-.service h1{
+#service h1{
     font-size: 3rem;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
@@ -274,7 +279,7 @@ body {
 
 .form {
     grid-area: form;
-    padding: 30px 30px 30px 112px;
+    padding: 88px 30px 30px 112px;
     /* border: 2px solid; */
     background-color: rgb(87, 187, 191);
 }
