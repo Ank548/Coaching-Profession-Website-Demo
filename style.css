@@ -155,7 +155,8 @@ body {
 
 .about {
     grid-area: about;
-    padding: 30px 110px;
+    padding: 30px 12px 30px 112px;
+
 
 }
 
